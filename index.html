@@ -5,12 +5,58 @@
 	<title>ssd</title>
 </head>
 <body>
-	<form action="" onsubmit="sumbitAction(this)" name="nameForm">
+	<form action="" onsubmit="sumbitAction(this)" name="nameForm" id="idForm">
 		<label for="nameInput">Введите имя</label>
 		<br>
 		<input type="text" name="nameInput">
+		
 		<br>
-		<input type="submit" name="submit">
+		<br>
+		<label for="whatGame">Выберите игру</label>
+		<br>
+		<input type="radio" name="whatGame" value="Dota 2"> Dota 2
+		<br>
+		<input type="radio" name="whatGame" value="Far Cry 5"> Far Cry 5
+		<br>
+		<input type="radio" name="whatGame" value="Minecraft"> Minecraft
+
+		<br>
+		<br>
+		<label for="Person">Выберите персонажа</label>
+		<br>
+		<input type="radio" name="Person" value="Копатель"> Копатель
+		<br>
+		<input type="radio" name="Person" value="Клоун"> Клоун
+		<br>
+		<input type="radio" name="Person" value="Кривое"> Кривое
+
+		<br>
+		<br>
+		<label for="predmety">Выберите предмет</label>
+		<br>
+		<input type="radio" name="predmety" value="шкатулку"> Шкатулку
+		<br>
+		<input type="radio" name="predmety" value="нож"> Нож
+		<br>
+		<input type="radio" name="predmety" value="телефон"> Телефон
+
+
+		<br>
+		<br>
+		<input type="button" name="but2" onclick="sumbitAction(getElementById('idForm'))" value="Сгенерировать">
+		<br>
+		<div>
+			<div>Однажды </div>
+			<div id="Story">Имя</div> 
+			 играл в
+			<div id="Game">игру</div>
+			. Играл он уже десятый час подряд и тут его комп начал лагать. Из-за этих лагов в 
+			<div id="Game2">игре</div>
+			 ему стал мерещиться 
+			<div id="personaz">кто-то</div>
+			, а в руках он держал 
+			<div id="predmet">предмет</div>
+		</div>
 	</form>	
 	<script type="text/javascript" src="script.js"></script>
 </body>

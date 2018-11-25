@@ -1,3 +1,7 @@
 body{
 	background-color: lightgreen;
 }
+
+div{
+	display: inline-block;
+}
